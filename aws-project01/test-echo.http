@@ -1,0 +1,13 @@
+POST {{uri}}/api/test/echo
+Accept: application/json
+
+mensagem criptografada
+
+###
+
+POST{{uri}}/api/test/echo
+Accept: application/json
+
+mensagem criptografada
+
+###

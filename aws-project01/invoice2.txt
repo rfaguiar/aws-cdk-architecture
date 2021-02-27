@@ -1,0 +1,6 @@
+{
+"invoiceNumber":"ABC-124",
+"customerName":"Doroteia",
+"totalValue":1896.20,
+"quantity":2
+}

@@ -1,0 +1,22 @@
+POST {{uri}}/api/test/echo
+Accept: application/json
+
+mensagem criptografada
+
+###
+
+POST{{uri}}/api/test/echo
+Accept: application/json
+
+mensagem criptografada
+
+###
+GET {{uri}}/actuator/health
+Accept: application/json
+
+###
+
+GET {{uri}}/api/test/dog/tot87
+Accept: application/json
+
+###

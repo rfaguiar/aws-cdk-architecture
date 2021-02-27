@@ -1,0 +1,8 @@
+### create s3 url
+POST {{uri}}/api/invoices
+Accept: application/json
+Content-Type: application/json
+
+### findAll
+GET {{uri}}/api/invoices
+Accept: application/json

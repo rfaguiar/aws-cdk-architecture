@@ -1,0 +1,14 @@
+GET {{uri}}/api/events
+Accept: application/json
+
+###
+
+GET {{uri}}/api/events/COD5
+Accept: application/json
+
+###
+
+GET {{uri}}/api/events/COD5/PRODUCT_UPDATE
+Accept: application/json
+
+###

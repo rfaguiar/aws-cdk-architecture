@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/test/dog/matilde
+Accept: application/json
+
+###
+
+GET http://localhost:8080/actuator/health
+Accept: application/json
+
+###
+
+GET {{uri}}/api/test/dog/tot87
+Accept: application/json
+
+###

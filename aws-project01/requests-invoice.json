@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "1bf6279d-04f8-49ab-b4bd-14e901f3d7a5",
+		"name": "curso aws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "invoice request s3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://servi-alb01-n106bv8apbnw-420391482.us-east-1.elb.amazonaws.com/api/invoices",
+					"protocol": "http",
+					"host": [
+						"servi-alb01-n106bv8apbnw-420391482",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S3 upload file",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/home/rogerio.aguiar/projects/funny-toys/aws-ecs/aws-project01/invoice.txt"
+					}
+				},
+				"url": {
+					"raw": "https://pcs01-invoice.s3.amazonaws.com/786736f8-08a9-4cbe-a45a-ecde6adef8cf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE8aCXVzLWVhc3QtMSJHMEUCIHmIwu1G%2FN3J5pZs6UaN0zJPRcf%2FfQUhPsKEykGEAKqBAiEAvKdQFZI%2FmKoFDHKXd%2Bzo6igdBsddjKGdk2D7sLEY4JcqpQMIaBAAGgw4MjU0OTQ5OTI4ODEiDGAQLi5EBt6%2FaAeQsiqCA%2FO2liR1jU%2FBwpf8VveJAhYT0JF8cXDIWFLoXnEGKrKbGXBCF8q%2FCbXicc4hzXBSrYSGGjsfm9458fU%2FCv6OKm%2B1p2TiptKNR7vLiHQS6Gnnxz0j7%2Bflt8B3KpjNYYRHwcLfb4nVxv85Qy5HcKtLwqfJ%2FCcHjQM9%2FtrLpyz0iWsvhV3%2BAbPcv1JigvbttPfky0Vnaa1OFm%2BgF0wy4uCH6dcF0m3QyibEE1FQuZvJKuIMtZYgM8mAQyLxSL2veViqmHvqvkPe8psGiU0VZlm3aS%2BhBY84xYoq9nTOsS4NhyqzRXSDowyh8teRVOdm9HYJTGEGsaJ9pdSPHbfEgttlhd%2FatGkj8odSAY1E%2BkHoPrGpsfFTZ0iXYWem3p%2Bq%2B5WGOMigorgKesGuK3SoxRxKWN93qErS%2ByUKf%2BYPCwwUvtKdUh48P3whw%2BT5MBLf1hfqB2mgjaeb27f3BedHqXfAcMEZWEqQa9UpFAuScJ6z6jT5bSKHb8GJCjvEIoTSewrNgW1BMISS64EGOusBJ0yguWCT6xY48vhuET9%2BZ2RS0628cO0yjBUWIhaSThcT9iEOea3FW5P%2BUQeWfRxNtP3j05ZqBS%2BESPgnIlxwZlZJ%2FN%2FCG8txQYYi%2FS2hUmYMvkBzYsbaFOYHTPF0B%2FczktRtY6ozUvmqIjt9YyiLZwSbTvLguGoAHiZIj6abY8%2FOREt4%2BxhTXNFR%2FpFzw2uw14Uhwk0cySE9ZWoj1aCONXy3UunxRa4C7OAVPJ1oHnc2PgbYPU9H3qxoXpqThDQSun8lLmnTjjbqjZvlLafN58hmljB2fBFO523QjYeoSk5HjNbgrgnS5sqvew%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210227T224307Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=ASIA4AM2V67YYMKFZPMS%2F20210227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6b22bfbaf97f74707cfafd09cb9a8366479c6b66d517aec90c30599301d64c55",
+					"protocol": "https",
+					"host": [
+						"pcs01-invoice",
+						"s3",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"786736f8-08a9-4cbe-a45a-ecde6adef8cf"
+					],
+					"query": [
+						{
+							"key": "X-Amz-Security-Token",
+							"value": "IQoJb3JpZ2luX2VjEE8aCXVzLWVhc3QtMSJHMEUCIHmIwu1G%2FN3J5pZs6UaN0zJPRcf%2FfQUhPsKEykGEAKqBAiEAvKdQFZI%2FmKoFDHKXd%2Bzo6igdBsddjKGdk2D7sLEY4JcqpQMIaBAAGgw4MjU0OTQ5OTI4ODEiDGAQLi5EBt6%2FaAeQsiqCA%2FO2liR1jU%2FBwpf8VveJAhYT0JF8cXDIWFLoXnEGKrKbGXBCF8q%2FCbXicc4hzXBSrYSGGjsfm9458fU%2FCv6OKm%2B1p2TiptKNR7vLiHQS6Gnnxz0j7%2Bflt8B3KpjNYYRHwcLfb4nVxv85Qy5HcKtLwqfJ%2FCcHjQM9%2FtrLpyz0iWsvhV3%2BAbPcv1JigvbttPfky0Vnaa1OFm%2BgF0wy4uCH6dcF0m3QyibEE1FQuZvJKuIMtZYgM8mAQyLxSL2veViqmHvqvkPe8psGiU0VZlm3aS%2BhBY84xYoq9nTOsS4NhyqzRXSDowyh8teRVOdm9HYJTGEGsaJ9pdSPHbfEgttlhd%2FatGkj8odSAY1E%2BkHoPrGpsfFTZ0iXYWem3p%2Bq%2B5WGOMigorgKesGuK3SoxRxKWN93qErS%2ByUKf%2BYPCwwUvtKdUh48P3whw%2BT5MBLf1hfqB2mgjaeb27f3BedHqXfAcMEZWEqQa9UpFAuScJ6z6jT5bSKHb8GJCjvEIoTSewrNgW1BMISS64EGOusBJ0yguWCT6xY48vhuET9%2BZ2RS0628cO0yjBUWIhaSThcT9iEOea3FW5P%2BUQeWfRxNtP3j05ZqBS%2BESPgnIlxwZlZJ%2FN%2FCG8txQYYi%2FS2hUmYMvkBzYsbaFOYHTPF0B%2FczktRtY6ozUvmqIjt9YyiLZwSbTvLguGoAHiZIj6abY8%2FOREt4%2BxhTXNFR%2FpFzw2uw14Uhwk0cySE9ZWoj1aCONXy3UunxRa4C7OAVPJ1oHnc2PgbYPU9H3qxoXpqThDQSun8lLmnTjjbqjZvlLafN58hmljB2fBFO523QjYeoSk5HjNbgrgnS5sqvew%3D%3D"
+						},
+						{
+							"key": "X-Amz-Algorithm",
+							"value": "AWS4-HMAC-SHA256"
+						},
+						{
+							"key": "X-Amz-Date",
+							"value": "20210227T224307Z"
+						},
+						{
+							"key": "X-Amz-SignedHeaders",
+							"value": "host"
+						},
+						{
+							"key": "X-Amz-Expires",
+							"value": "299"
+						},
+						{
+							"key": "X-Amz-Credential",
+							"value": "ASIA4AM2V67YYMKFZPMS%2F20210227%2Fus-east-1%2Fs3%2Faws4_request"
+						},
+						{
+							"key": "X-Amz-Signature",
+							"value": "6b22bfbaf97f74707cfafd09cb9a8366479c6b66d517aec90c30599301d64c55"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,40 @@
+### createProduct
+POST {{uri}}/api/products
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Product03",
+  "model": "Model3",
+  "code": "COD3",
+  "price": 12.0,
+  "color": "blue"
+}
+
+### findAll
+GET {{uri}}/api/products
+Accept: application/json
+
+### findById
+GET {{uri}}/api/products/10
+Accept: application/json
+
+### findByCode
+GET {{uri}}/api/products/bycode?code=COD1
+Accept: application/json
+
+### updateProduct
+PUT {{uri}}/api/products/5
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Product00022",
+  "model": "Model0022-alterado",
+  "code": "COD022",
+  "price": 17.0
+}
+
+### deleteProduct
+DELETE {{uri}}/api/products/3
+Accept: application/json
